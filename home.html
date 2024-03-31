@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Церкви и монастыри Великого Новгорода</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <h1>Церкви и монастыри Великого Новгорода</h1>
+</header>
+<div class="navbar">
+    <button id="indexBtn">Церкви</button>
+    <button id="homeBtn">Монастыри</button>
+</div>
+<div class="container">
+    <select id="citySelect" onchange="showAttraction()">
+        <option value="monasteries1">Десятинный монастырь</option>
+        <option value="monasteries2">Николо-Вяжищский монастырь</option>
+        <option value="monasteries3">Зверин-Покровский монастырь</option>
+        <option value="monasteries4">Юрьев монастырь</option>
+        <option value="monasteries5">Валдайский Иверский монастырь</option>
+        <option value="monasteries6">Антониев монастырь</option>
+        <option value="monasteries7">Хутынский монастырь</option>
+        <option value="monasteries8">Рдейский монастырь</option>
+        <option value="monasteries9">Деревяницкий монастырь</option>
+        <option value="monasteries10">Спасо-Преображенский монастырь</option>
+        <option value="monasteries11">Клопский монастырь</option>
+        <option value="monasteries12">Духов монастырь</option>
+        <option value="monasteries13">Рёконьская пустынь</option>
+        <option value="monasteries14">Кириллов монастырь</option>
+        <option value="monasteries15">Лисицкий Рождество-Богородицкий монастырь</option>
+        <option value="monasteries16">Свято-Троицкий Никандров женский монастырь</option>
+        <option value="monasteries17">Савво-Вишерский монастырь</option>
+        <option value="monasteries18">Сырков монастырь</option>
+    </select>
+    <div id="attractionInfo">
+        <h2>Десятинный монастырь</h2>
+        <p><strong>Дата постройки:</strong> 1902 год</p>
+        <p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, Десятинная ул., 3А</p>
+        <p>Недействующий, в прошлом женский второклассный монастырь Русской православной церкви в Великом Новгороде.</p>
+        <img src="monaster/1.jpg" alt="Десятинный монастырь">
+    </div>
+</div>
+<script>
+    function showAttraction() {
+        var city = document.getElementById("citySelect").value;
+        var attractionInfo = document.getElementById("attractionInfo");
+        if (city === "monasteries1") {
+            attractionInfo.innerHTML = "<h2>Десятинный монастырь</h2><p><strong>Дата постройки:</strong> 1374 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, Десятинная ул., 3А</p><p>Недействующий, в прошлом женский второклассный монастырь Русской православной церкви в Великом Новгороде.</p><img src='monaster/1.jpg' alt='Десятинный монастырь'>";
+        } else if (city === "monasteries2") {
+            attractionInfo.innerHTML = "<h2>Николо-Вяжищский монастырь</h2><p><strong>Дата постройки:</strong> 1411 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Вяжищи</p><p>Ставропигиальный женский монастырь Русской православной церкви.</p><img src='monaster/2.jpg' alt='Николо-Вяжищский монастырь'>";
+        } else if (city === "monasteries3") {
+            attractionInfo.innerHTML = "<h2>Зверин-Покровский монастырь</h2><p><strong>Дата постройки:</strong> 1148 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, улица Бредова-Звериная, 18</p><p>Бывший женский монастырь Русской православной церкви в Великом Новгороде.</p><img src='monaster/3.jpg' alt='Зверин-Покровский монастырь'>";
+        } else if (city === "monasteries4") {
+            attractionInfo.innerHTML = "<h2>Юрьев монастырь</h2><p><strong>Дата постройки:</strong> 1030 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, Юрьевское шоссе, 10</p><p>Мужской монастырь Русской православной церкви в честь великомученика Георгия, один из древнейших в России, в Средние века духовный центр Новгородской республики и богатейший духовный феодал.</p><img src='monaster/4.jpg' alt='Юрьев монастырь'>";
+        } else if (city === "monasteries5") {
+            attractionInfo.innerHTML = "<h2>Валдайский Иверский монастырь</h2><p><strong>Дата постройки:</strong> 1653 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Валдайский район, Валдай</p><p>Православный мужской монастырь на Сельвицком острове Валдайского озера в Валдайском районе Новгородской области, в 10 км от города Валдай. </p><img src='monaster/5.jpg' alt='Валдайский Иверский монастырь'>";
+        } else if (city === "monasteries6") {
+            attractionInfo.innerHTML = "<h2>Антониев монастырь</h2><p><strong>Дата постройки:</strong> 1292-1294 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, улица Антоново, 1</p><p>Упразднённый монастырь в Великом Новгороде, один из центров духовной жизни Новгородской республики.</p><img src='monaster/6.jpg' alt='Антониев монастырь'>";
+        } else if (city === "monasteries7") {
+            attractionInfo.innerHTML = "<h2>Хутынский монастырь</h2><p><strong>Дата постройки:</strong> 1192 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, деревня Хутынь, улица Монастырская</p><p>Женский монастырь Новгородской епархии Русской православной церкви.</p><img src='monaster/7.jpg' alt='Хутынский монастырь'>";
+        } else if (city === "monasteries8") {
+            attractionInfo.innerHTML = "<h2>Рдейский монастырь</h2><p><strong>Дата постройки:</strong> вторая половина XVII века</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород</p><p>Недействующий монастырь Новгородской епархии Русской православной церкви, расположенный в Холмском районе Новгородской области.</p><img src='monaster/8.jpg' alt='Рдейский монастырь'>";
+        } else if (city === "monasteries9") {
+            attractionInfo.innerHTML = "<h2>Деревяницкий монастырь</h2><p><strong>Дата постройки:</strong> 1330 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, Восточная улица, 3</p><p>Бывший православный монастырь Новгородской епархии.Расположен в микрорайоне Деревяницы в северной части Великого Новгорода, на правом берегу небольшой протоки — Деревянки.</p><img src='monaster/9.jpg' alt='Деревяницкий монастырь'>";
+        } else if (city === "monasteries10") {
+            attractionInfo.innerHTML = "<h2>Спасо-Преображенский монастырь</h2><p><strong>Дата постройки:</strong> 1192 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Старая Русса, Монастырская площадь, 1</p><p>Недействующий мужской монастырь Русской православной церкви в Старой Руссе.</p><img src='monaster/10.jpg' alt='Спасо-Преображенский монастырь'>";
+        } else if (city === "monasteries11") {
+            attractionInfo.innerHTML = "<h2>Клопский монастырь</h2><p><strong>Дата постройки:</strong> 1408 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, Десятинная улица, 4А</p><p>Мужской монастырь Новгородской епархии Русской православной церкви.</p><img src='monaster/11.jpg' alt='Клопский монастырь'>";
+        } else if (city === "monasteries12") {
+            attractionInfo.innerHTML = "<h2>Духов монастырь</h2><p><strong>Дата постройки:</strong> 1162 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, улица Мусы Джалиля-Духовская, 31</p><p>Духов монастырь впервые упоминается в летописи в 1162 году как уже существующий. Он считался одним из крупных новгородских монастырей (после Юрьева, Антониева, Хутынского и Вяжищского).</p><img src='monaster/12.jpg' alt='Духов монастырь'>";
+        } else if (city === "monasteries13") {
+            attractionInfo.innerHTML = "<h2>Рёконьская пустынь</h2><p><strong>Дата постройки:</strong> XVII век</p><p><strong>Адрес:</strong> Россия, Новгородская область, Любытинский район</p><p>Недействующий монастырь, расположенный в Любытинском районе Новгородской области, ниже впадения в реку Реконьку Лебедина ручья.</p><img src='monaster/13.jpg' alt='Рёконьская пустынь'>";
+        } else if (city === "monasteries14") {
+            attractionInfo.innerHTML = "<h2>Кириллов монастырь</h2><p><strong>Дата постройки:</strong> 1196 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, Юрьевское шоссе, 10</p><p>Разрушенный монастырь в Великом Новгороде.</p><img src='monaster/14.jpg' alt='Кириллов монастырь'>";
+        } else if (city === "monasteries15") {
+            attractionInfo.innerHTML = "<h2>Лисицкий Рождество-Богородицкий монастырь</h2><p><strong>Дата постройки:</strong> конец XIV века</p><p><strong>Адрес:</strong> Неизвестен</p><p>Мужской монастырь Новгородской республики, затем Новгородской губернии и уезда.</p>";
+        } else if (city === "monasteries16") {
+            attractionInfo.innerHTML = "<h2>Свято-Троицкий Никандров женский монастырь</h2><p><strong>Дата постройки:</strong> 1550 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Любытинский район, деревня Никандрово</p><p>Женский монастырь Боровичской епархии Русской православной церкви.</p><img src='monaster/16.jpg' alt='Свято-Троицкий Никандров женский монастырь'>";
+        } else if (city === "monasteries17") {
+            attractionInfo.innerHTML = "<h2>Савво-Вишерский монастырь</h2><p><strong>Дата постройки:</strong> начало XV века</p><p><strong>Адрес:</strong> Россия, Новгородская область, Новгородский район, деревня Савино</p><p>Православный храм в Великом Новгороде, на берегу реки Веряжи. Бывшая церковь 1-й учительской семинарии в Григорове.</p><img src='monaster/17.jpg' alt='Савво-Вишерский монастырь'>";
+        } else if (city === "monasteries18") {
+            attractionInfo.innerHTML = "<h2>Сырков монастырь</h2><p><strong>Дата постройки:</strong> 1548 год</p><p><strong>Адрес:</strong> Россия, Новгородская область, Великий Новгород, деревня Сырково</p><p>Монастырь был основан около 1548 года по обету новгородским боярином Фёдором Сырковым в благодарность за благополучное посольство в ливонский город Колывань (современный Таллин).</p><img src='monaster/18.jpg' alt='Сырков монастырь'>";
+        }
+    }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
